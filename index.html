@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Filter</title>
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <link rel="stylesheet" type="text/css" href="//use.fontawesome.com/releases/v5.0.6/css/all.css">
+    </head>
+    <body>
+       <div class="container">
+            
+            <p class="news_general_items_cont_decription news_general_items" data-filteryear="01.02.2019">Lorem tratat sa dsa sad sa</p>
+            <p class="news_general_items_cont_decription news_general_items" data-filteryear="01.09.2020">asdsdsadsa sa dsa sad saasdssad</p>
+            <p class="news_general_items_cont_decription">asdsdsadsa sa dsa sad saasdsa</p>
+            <h2 @if.hasTitle={props.title} style="color:black; text-align:center;" class="h2">{props.title}</h2>
+            <div class="filter--slider">
+                <form class="filter--slider_form">
+                    <label>
+                        <input type="text" name="search" placeholder={props.placeholder} /><i class="fas fa-search"></i>
+                    </label>
+                </form>
+                <div class="filter--slider_right">
+                    <div class="filter--slider_right_title">Filter<span class="icon-next"></span></div>
+                    <div class="filter--slider_right_cont">
+                        <div class="filter--slider_right_cont_list">
+                            <h4 class="h4">Objektart <span class="icon-next"></span></h4>
+                            <form class="filter--slider_right_cont_list_form">
+                                <label><input value="f" type="checkbox" />Wohnen<span></span></label>
+                                <label><input type="checkbox" />Kommunal<span></span></label>
+                                <label><input type="checkbox" />Gewerbe<span></span></label>
+                            </form>
+                        </div>
+                        <div class="filter--slider_right_cont_list">
+                            <h4 class="h4">Objektart <span class="icon-next"></span></h4>
+                            <form class="filter--slider_right_cont_list_form">
+                                <label><input value="d" type="checkbox" />Holzoberfläche<span></span></label>
+                                <label><input type="checkbox" />Raumakustik<span></span></label>
+                                <label><input type="checkbox" />Schallschutz<span></span></label>
+                                <label><input type="checkbox" />Feuerwiderstand<span></span></label>
+                                <label><input type="checkbox" />Große Spannweite<span></span></label>
+                                <label><input type="checkbox" />Erhöhte Wärmedämmung<span></span></label>
+                                <label><input type="checkbox" />Neubaulösung<span></span></label>
+                                <label><input type="checkbox" />Sanierungslösung<span></span></label>
+                            </form>
+                        </div>
+                        <div class="filter--slider_right_cont_list">
+                            <h4 class="h4">Objektart <span class="icon-next"></span></h4>
+                            <form class="filter--slider_right_cont_list_form">
+                                <label><input value="b" type="checkbox" />Wand innen<span></span></label>
+                                <label><input type="checkbox" />Wand aussen<span></span></label>
+                                <label><input type="checkbox" />Geschossdecke<span></span></label>
+                                <label><input type="checkbox" />Dach<span></span></label>
+                                <label><input type="checkbox" />Wärmedämmung<span></span></label>
+                                <label><input type="checkbox" />Innenausbau<span></span></label>
+                                <label><input type="checkbox" />Fassadenbekleidung<span></span></label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="f-slide f d" >F</div>
+                <div class="f-slide d" >D</div>
+                <div class="f-slide b" >B</div>
+                <div class="f-slide f" >F</div>
+                <div class="f-slide d f" >D</div>
+                <div class="f-slide b" >B</div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/script.js">
+        </script>
+    </body>
+</html>
+
